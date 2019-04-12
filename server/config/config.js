@@ -21,7 +21,7 @@ let urlDB;
  }
  else
  {
-  urlDB = 'mongodb+srv://montserrat:Oqsm0W0RLYIhaNSR@cluster0-wflwm.mongodb.net/cafe';
+  urlDB = process.env.MONGO_URI;
 }
 
 process.env.URLDB = urlDB;
